@@ -1,0 +1,591 @@
+
+.wrapper{
+	width:95%;
+	margin:auto;
+	overflow:hidden;
+	
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+a{
+	text-decoration: none;
+}
+h2{
+	font: 2.2rem/3.5rem Arial,sans-serif;
+	text-align: justify;
+}
+h3{
+	font: bold 1.6rem/1.6rem Arial,sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+p{
+	font: 1.5rem/3.3rem Arial,sans-serif;
+	color:#656565;
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+
+
+	
+		/*********HEADER BEGIN**********/
+
+.header{
+	padding-top: 1.3rem;
+	position:relative;
+}
+.logo{
+	width: 12rem;
+	padding:0.2rem 1rem 1.5rem 3.7rem;
+	background:url(../images/Logo.png) no-repeat 0 50%;
+	font:2.5rem/3.6rem Arial, sans-serif;
+	text-transform: uppercase;
+	color:#cacaca;
+	display: block;
+	float: left;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.nav{
+	float: right;
+	padding:0.7rem;
+	background:#1ABB9C;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.menu{
+	float: right;
+	margin-top:2rem;
+	width: 30px;
+	height: 6px;
+	background:#c5c5c5;
+	position:relative;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.menu::before,
+.menu::after{
+	content:'';
+	width: 30px;
+	height: 6px;
+	background:#c5c5c5;
+	position:absolute;
+	top:-10px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.menu::before{
+	top:-20px;
+}
+.nav:hover{
+	background: #c5c5c5;
+}
+.nav:hover .menu,
+.nav:hover .menu::before,
+.nav:hover .menu::after{
+	background:#1abb9c;
+}
+.nav ul{
+	position:absolute;
+	left: 0;
+	right: 0;
+	top:-32rem;
+	background: #fff;
+	border-top:2rem solid transparent;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.nav:hover ul{
+	top:calc(100% - 1.25rem);
+}
+.nav li{
+	text-align: center;
+	padding-bottom: 1.5rem;
+}
+.nav li a{
+	text-align: center;
+	color:#cacaca;
+	font:bold 1.3rem/2.2rem Arial, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.nav li:hover a{
+	color:#1abb9c;
+}
+
+
+
+
+		/*********MAIN BEGIN**********/
+.slider{
+	min-height:500px;
+	border-top:4px solid #7f7f7f;
+	
+	
+	
+}
+.slider h1,
+.slider h2{
+	display: table;
+	text-align: center;
+	padding:3rem;
+	background: rgba(0, 0, 0, 0.3);
+	font:bold 4rem/4rem Arial,sans-serif;
+	text-transform: uppercase;
+	margin:13rem auto 1rem;
+	color:#fff;
+}
+.slider h2{
+	padding:2.5rem;
+	margin:0 auto 2.7rem;
+	font: lighter 2.5rem/2.5rem Arial,sans-serif;
+}
+.social{
+	width: 215px;
+	height: 50px;
+	margin:auto;
+}
+.social li{
+	width: 50px;
+	height: 50px;
+	float: left;
+	background: rgba(0, 0, 0, 0.3);
+	margin-right: 5px;
+}
+.social li:last-child{
+	margin-right: 0;
+}
+.social li a{
+	display: block;
+	height:50px;
+	background:url(../images/spriteSocial.png) no-repeat 12.5px 12.5px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+		.social li:nth-child(2) a{
+			background-position: -45.5px 12.5px;
+		}
+		.social li:nth-child(3) a{
+			background-position: -100.5px 12.5px;
+		}
+		.social li:nth-child(4) a{
+			background-position: -155.5px 12.5px;
+		}
+
+
+
+/********section about me*********/
+
+.headSection{
+	height:5rem;
+	background:#1abc9c;
+	margin-bottom: 5rem;
+}
+.headSection h1{
+	font: 1.8rem/5rem Arial,sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+
+}
+.headSection .wrapper::after{
+	width: 0;
+	height: 0;
+	content:'';
+	margin-left: 6rem;
+	border:6px solid transparent;
+	border-top-color: #1abc9c;
+	position: absolute;
+	
+	
+}
+.aboutMe .img{
+	width: 300px;
+	height: 300px;
+	border-radius:50%;
+	overflow: hidden;
+	margin:0 auto 5rem;
+}
+.aboutMe h2{
+	margin-bottom: 4rem;
+	color:#484848;
+	
+}
+.aboutMe h3{
+	color:#484848;
+}
+.aboutMe p{
+	margin-bottom: 3rem;
+}
+
+.hireMe{
+	width:80%;
+	margin:0 auto 4rem;
+}
+.hireMe a{
+	box-shadow: inset 0 -4px rgba(0, 0, 0, 0.15);
+	border-radius:3px;
+	font:bold 1.4rem/3.5rem Arial,sans-serif;
+	background: #3f8dbf;
+	color:#fff;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+	transition: all 0.3s ease-out;
+}	
+.hireMe a span{
+	padding: 0.5rem 0 0.5rem 3rem;
+	background:url(../images/hireMe.png) no-repeat 0 50%;
+}
+.hireMe a:hover{
+	background:#43acef;
+}
+/********section portfolio ************/
+
+.portfolio{
+	background: #333;
+}
+.portfolio img{
+	margin-bottom:4rem;
+	box-shadow:0px 4px rgba(0, 0, 0, 0.11);
+	width:100%;
+}
+.portfolio h3{
+	color:#fff;
+	margin-bottom: 2rem;
+}
+.portfolio p{
+	color:#d2d2d2;
+	margin-bottom: 4rem;
+}
+
+
+/********section blog*********/
+.blog{
+	background:#f0f0f0;
+}
+.blog article{
+	margin-bottom: 4rem;
+	box-shadow:0px 4px rgba(0, 0, 0, 0.05);
+}
+.blog article div{
+	padding:2.5rem;
+	background:#fff;
+}
+.blog article div:first-of-type{
+	background:#f9f9f9;
+}
+.blog span{
+	max-width:75%;
+	color:#9f9f9f;
+	font:bold 1.3rem/1.5rem Arial,sans-serif;
+	text-transform: uppercase;
+}
+.blog span:last-of-type{
+	float: right;
+	padding-right:2rem;
+	background:url(../images/likes.png) no-repeat 100% 50%;
+}
+.blog h3{
+	color:#5c5c5c;
+}
+.blog p{
+	margin-bottom: 0;
+}
+
+/********section contacts*********/
+
+.contacts{
+	padding-bottom: 4rem;
+	background:url(../images/bgForm.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.contacts input,
+.contacts button,
+.contacts textarea{
+	background:rgba(255, 255, 255, 0.11);
+	border:none;
+	width:100%;
+	height:3.5rem;
+	margin-bottom: 2rem;
+	font:bold 1.2rem/1.3rem Arial,sans-serif;
+	text-transform: uppercase;
+	padding-left: 1.5rem;
+	color:#a1a1a1;
+}
+
+
+.contacts textarea{
+	padding-top: 1.5rem;
+	max-width:100%;
+	min-width:100%;
+	min-height:10rem;
+}
+
+.contacts button{
+	border-radius:3px;
+	background: #3f8dbf;
+	color:#fff;
+	padding:0.5rem;
+	margin-bottom: 4rem;
+	box-shadow: inset 0 -4px rgba(0, 0, 0, 0.15);
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.contacts button:hover{
+	background:#43acef;
+}
+.contacts button span{
+	background:url(../images/hireMe.png) no-repeat 0 50%;;
+	padding:0.5rem 0 0.5rem 3rem;
+}
+.contacts h3{
+	color:#fff;
+}
+.contacts p{
+	color:#d9d9d9;
+}
+.contacts ul{
+	margin:auto;
+}
+.contacts li{
+	font:1.5rem/3.3rem Arial,sans-serif;
+	color:#d9d9d9;
+	padding-left:2.5rem;
+	text-align: center;
+}
+.contacts li span{
+	background: url(../images/spriteContacts.png) no-repeat 0 12px;
+	padding:1rem 0  1rem 2.5rem ;
+}
+.contacts li:nth-of-type(2) span{
+	background-position:0 -19px;
+}
+.contacts li:nth-of-type(3) span{
+	background-position:0 -53px;
+}
+
+
+
+/********FOOTER BEGIN*********/
+
+.footer{
+	padding:4rem 0;
+}
+.footer p{
+	text-align: center;
+}
+.footer .social li{
+	background: none;
+}
+.footer .social li a{
+	background:url(../images/spriteSociaFooterl.png) no-repeat 12.5px 12.5px;
+	-webkit-transition: background-position 0.3s ease-out;
+	-moz-transition: background-position 0.3s ease-out;
+	-o-transition: background-position 0.3s ease-out;
+	transition: background-position 0.3s ease-out;
+}
+		.footer .social li:nth-child(2) a{
+			background-position: -45.5px 12.5px;
+		}
+		.footer .social li:nth-child(3) a{
+			background-position: -100.5px 12.5px;
+		}
+		.footer .social li:nth-child(4) a{
+			background-position: -155.5px 12.5px;
+		}
+
+
+/********hover styles*********/
+
+		.social li:hover a,
+		.footer .social li:hover a
+		{
+			background:url(../images/spriteSocialHover.png) no-repeat 12.5px 12.5px;
+		}
+		.social li:hover:nth-child(2) a,
+		.footer .social li:hover:nth-child(2) a
+		{
+			background-position: -45.5px 12.5px;
+		}
+		.social li:hover:nth-child(3) a,
+		.footer .social li:hover:nth-child(3) a
+		{
+			background-position: -100.5px 12.5px;
+		}
+		.social li:hover:nth-child(4) a,
+		.footer .social li:hover:nth-child(4) a
+		{
+			background-position: -155.5px 12.5px;
+		}
+
+
+#slider,#slider2{
+	
+	overflow: hidden;
+	margin-bottom: 4rem;
+}
+#slider img,
+#slider2 img{
+	width:100%;
+}
+
+
+/********768 - 1170 px styles*********/
+
+/********768 - 1170 px styles*********/
+
+@media (min-width: 768px){
+/********header*********/
+
+	.logo{
+		margin-top: 1rem;
+	}
+	.nav{
+		background:none;
+		margin-top:-0.5rem;
+	}
+	.nav:hover{
+		background: none;
+	}
+	.menu,
+	.menu::before,
+	.menu::after{
+		display: none;
+	}
+	.nav ul{
+		position:static;
+
+	}
+	.nav li{
+		float: left;
+		margin-right: 3.5rem;
+	}
+	.nav li:last-child{
+		margin-right:0;
+	}
+/********main*********/
+
+/********slider*********/
+	.slider{
+		
+		
+	}	
+	.slider h1{
+
+		font-size: 8rem;
+		line-height:8rem;
+	}
+	.slider h2{
+		font-size: 5rem;
+		line-height:5rem;
+	}
+
+/********about me*********/
+
+	.aboutMe article:nth-of-type(2),
+	.aboutMe article:nth-of-type(3),
+	.aboutMe article:nth-of-type(4){
+		width:31.3333%;
+		float: left;
+	}
+	.aboutMe article:nth-of-type(2),
+	.aboutMe article:nth-of-type(3){
+		margin-right: 3%;
+	}
+	.hireMe{
+		clear:both;
+		width:140px;
+	}
+	.hireMe a{
+		line-height:4.5rem;
+	}
+
+
+/********blog*********/
+	.blog article{
+		width:48%;
+		float: left;
+	}
+	.blog article:nth-of-type(odd){
+		margin-right: 4%;
+	}
+
+/********contacts*********/
+	.contacts form{
+		width:48%;
+		margin-right: 4%;
+		float: left;
+	}
+	.contacts li{
+		text-align: left;
+	}
+	.contacts button{
+		margin-bottom: 0;
+		width:140px;
+	}
+
+
+@media (min-width: 1170px){
+	.wrapper{
+		max-width:1170px;
+	}
+	p{
+		text-align: left;
+	}
+	h2{
+		text-align: left;
+	}
+	h3{
+		text-align: left;
+	}
+	/********about me*********/
+	.aboutMe article:nth-of-type(1)::after{
+		content:'';
+		display: block;
+		clear:both;
+	}
+	.aboutMe article:nth-of-type(1) .img{
+		width:31.3333%;
+		height:auto;
+		float: left;
+		margin:0 3% 6rem 0;
+	}
+	
+	/********contacts*********/
+	.contacts form{
+		width:65.8%;
+	}
+	
+	.contacts input,
+	.contacts button{
+		height:5rem;
+	}
+	.contacts textarea{
+		min-height:21rem;
+		max-height: 35rem;
+	}
+	
+
+}
+
