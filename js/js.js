@@ -1,5 +1,9 @@
 $(document).ready(function(){
-	 $('#slider').slick({
+	$('#mainSlider').slick(); 
+
+
+
+  $('#slider').slick({
   dots: false,
   infinite: true,
   speed: 300,
@@ -12,7 +16,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: false
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -34,12 +38,24 @@ $(document).ready(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       }
       // You can unslick at a given breakpoint now by adding:
       // settings: "unslick"
       // instead of a settings object
     ]
+  });
+
+  $('#menu').click(function() {
+    if ($('.nav ul').hasClass('dropDown'))
+    {
+      $('.nav ul').removeClass('dropDown');
+    }
+    else
+      {
+        $('.nav ul').addClass('dropDown');
+      }
+    
   });
 });
